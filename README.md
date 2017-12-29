@@ -37,12 +37,12 @@ and directly start working on your view.
 `python <react-rn-scaffold-generator_path>\file_generator.py` 
 eg: `python D:\python_files\react-rn-scaffold\file_generator.py`
 
--Enter Screen name,
--Enter reducer key for the screen
+- Enter Screen name,
+- Enter reducer key for the screen
 
 3. To create a new Action
 `python D:\python_files\react-rn-scaffold\add_actions.py`
 
--Enter Screen name
--Enter action name
--Add comments for the type (optional)
+- Enter Screen name
+- Enter action name
+- Add comments for the type (optional)
