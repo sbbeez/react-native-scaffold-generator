@@ -34,10 +34,11 @@ and directly start working on your view.
 1. Open the python root folder, usually in windows, it'll be like, `C:\Python27`(python 2.7)
 
 2. To Create a screen and necessary files, run 
-`python <react-rn-scaffold-generator_path>\file_generator.py` 
-eg: `python D:\python_files\react-rn-scaffold\file_generator.py`
+ `python <react-rn-scaffold-generator_path>\file_generator.py` 
+ 
+ eg: `python D:\python_files\react-rn-scaffold\file_generator.py`
 
-- Enter Screen name,
+- Enter Screen name
 - Enter reducer key for the screen
 
 3. To create a new Action
