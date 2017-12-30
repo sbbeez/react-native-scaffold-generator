@@ -12,10 +12,10 @@ React native scaffold generator using python.
 
 ![Screenshot](https://s14.postimg.org/vtvnjgs7l/file_Structure.png)
 
-Almost every time you create a new screen, you'll have to create a action and reducer and wire it to the screen, 
+Almost every time you create a new screen, you'll have to create a action and reducer and wire it to the screen,
 which is really a redudant work and we programmers are here to automate not do same work again and again.
 
-So here comes the scaffold generator for creating neccessary files(`actions,reducers,screens boilerplate`) 
+So here comes the scaffold generator for creating neccessary files(`actions,reducers,screens boilerplate`)
 and directly start working on your view.
 
 ## Features
@@ -33,9 +33,9 @@ and directly start working on your view.
 ## Usage
 1. Open the python root folder, usually in windows, it'll be like, `C:\Python27`(python 2.7)
 
-2. To Create a screen and necessary files, run 
- `python <react-rn-scaffold-generator_path>\file_generator.py` 
- 
+2. To Create a screen and necessary files, run
+ `python <react-rn-scaffold-generator_path>\file_generator.py`
+
  eg: `python D:\python_files\react-rn-scaffold\file_generator.py`
 
 - Enter Screen name
@@ -47,3 +47,7 @@ and directly start working on your view.
 - Enter Screen name
 - Enter action name
 - Add comments for the type (optional)
+
+4. To use the scaffold files(src folder having mentioned file strcture)
+   that are already present, you can use following command,
+   `python  D:\python_files\react-rn-scaffold\add_starter_files.py`
