@@ -3,15 +3,20 @@
 #Imports for adding action
 import re
 
+#opening scaffold root file
+scaffold_root_path_file = open("C:\\python27\\scaffold_root_path.txt","r");
+scaffold_root_path = scaffold_root_path_file.read()[0:-1];
+scaffold_root_path_file.close();
+
 #route setup
-set_up_file = open("D:\\d\\python\\rn-scaffold\\index.txt","r");
+set_up_file = open(scaffold_root_path+"\\index.txt","r");
 rn_project_root_path = set_up_file.read();
 set_up_file.close();
 
 class ActionScaffold:
     def __init__(self,action):
         self.action = action;
-    
+
     def getTypeFormat(self):
         array = re.findall(r'[A-Z](?:[a-z]+|[A-Z]*(?=[A-Z]|$))', self.action)
         formatted_type = ""
@@ -47,7 +52,7 @@ action_types_file.close(); #closing the types.js file
 
 #---------------------------Actions---------------------------------
 action_file = open(rn_project_root_path+"actions\\"+screen_name+"Actions.js","a");
-action_sample_file = open("D:\\d\\python\\rn-scaffold\\actionsGeneratorJsfiles\\ActionsSample.txt","r");
+action_sample_file = open(scaffold_root_path+"\\actionsGeneratorJsfiles\\ActionsSample.txt","r");
 action_sample = action_sample_file.readlines();
 
 words_array = [];
@@ -74,9 +79,5 @@ for lines in temp_action_content_array:
         action_content+=" "
     action_content+="\n"
 
-print(action_content)   
+print(action_content)
 action_file.write("\n\n"+action_content)
-
-
-
-
