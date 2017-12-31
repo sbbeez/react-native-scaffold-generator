@@ -47,7 +47,7 @@ formatted_type = action_scaffold_generator.getTypeFormat();
 #open types file for adding type
 action_types_file = open(rn_project_root_path+"actions\\types.js","a");
 #appending the type to types.js
-action_types_file.write("\nexport const "+formatted_type.upper()+" = "+'"'+formatted_type+'";');
+action_types_file.write("\nexport const "+formatted_type.upper()+" = "+'"'+formatted_type+'";'+comment_for_action);
 action_types_file.close(); #closing the types.js file
 
 #---------------------------Actions---------------------------------
