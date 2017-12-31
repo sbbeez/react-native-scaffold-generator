@@ -31,12 +31,15 @@ and directly start working on your view.
 2. Open the folder and open index.txt and modify to `project_root_path/src`, so that points out the src folder of the project
 
 ## Usage
+
+Note: You have to set up a file called `scaffold_root_path.txt` inside your python root folder and inside of that point out the project root_folder, for eg: your `scaffold_root_path.txt` should look like: `D:\\d\\python\\rn-scaffold`(where u cloned the repo)
+
 1. Open the python root folder, usually in windows, it'll be like, `C:\Python27`(python 2.7)
 
 2. To Create a screen and necessary files, run
- `python <react-rn-scaffold-generator_path>\file_generator.py`
+ `python <react-rn-scaffold-generator_path>\add_new_screen.py`
 
- eg: `python D:\python_files\react-rn-scaffold\file_generator.py`
+ eg: `python D:\python_files\react-rn-scaffold\add_new_screen.py`
 
 - Enter Screen name
 - Enter reducer key for the screen
